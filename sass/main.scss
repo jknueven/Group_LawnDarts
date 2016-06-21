@@ -2,6 +2,8 @@ $primaryColor: #F79459;
 
 $secondaryColor: #C2DC74;
 
+@import "map";
+
 .Top, .Testimonials, .Companies, .Map, .Footer {
 	background-size:cover;
 }
@@ -94,13 +96,60 @@ $secondaryColor: #C2DC74;
 }
 
 .Testimonials {
-	height:300px;
+	height:360px;
 	background-color:white;
+}
+
+.testimonials {
+	margin-left:500px;
+    padding-bottom: 20px;
+
+}
+
+.testimonial {
+	margin-left:50px;
+}
+
+.personOne img, .personTwo img, .personThree img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.images {
+    width:100%;
+}
+ 
+.customerName {
+    font-weight: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.testText {
+	margin-left:125px;
+	text-align:center;
+}
+.review .customerReview {
+    text-align: center;
+    display: inline-block;
+}
+
+.review {
+	h2 {
+		margin-right: 0;
+	}
 }
 
 .Companies {
 	height:300px;
 	background-color:lighten($secondaryColor,10);
+}
+
+.fourCosBox {
+	img{
+		width:150px;
+	}
 }
 
 .Map {
