@@ -1,0 +1,39 @@
+.ModalButton {
+	padding-left:0px;
+	font-size: 25px;
+}
+
+.ModalButton button {
+	background-color: #FBAB18;
+	border:none;
+}
+
+.descripBox p{
+	margin-top: 5px;
+}
+
+.containerCart {
+	margin-left:30px;
+}
+
+.descripBox {
+	width: 400px;
+	height:300px;
+	background-color: grey;
+	margin-top:10px;
+}
+
+.Buttons {
+	margin-top:10px;
+}
+
+.SocialMedia {
+	margin-left:28px;
+}
+
+.SocialMedia i {
+	margin-top: 10px;
+	margin-left:15px;
+	font-size:40px;
+	color:#FBAB18;
+}
