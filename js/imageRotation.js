@@ -1,6 +1,5 @@
-$( document ).ready(function() {
-
-//image rotation
+//1. set ul width 
+//2. image when click prev/next button
 var ul;
 var li_items;
 var imageNumber;
@@ -81,58 +80,3 @@ function onClickNext(){
 }
 
 window.onload = init;
-
-//getting the info for product
-$.ajax({
-		url: "https://json-data.herokuapp.com/darts/info",
-		type:"GET",
-		success: function(response)
-		{
-			console.log(response);
-			var title = response.data.product.title;
-			var descrip = response.data.product.description;
-			$('.Title').append("<h2>"+title+"</h2>");
-			$('.descripBox').append("<p>"+descrip+"</p>");
-		}
-	});
-
-$.ajax ({
-    url:'https://json-data.herokuapp.com/darts/testimonials',
-    type:"GET",
-    success: function(review){
-         
-    var userTestimonials = review.results;
-
-    userTestimonials.forEach(function (people,index){
-        var image = "<img src='images/person"+index+".jpg'>";
-        $(".testimonial").append('<div class="col-md-4 testText"><div class="review"><div class="people">'+image+'</div><h2 class="customerName">'+people.name+'</h2></div><p class="customerReview">'+people.review+'</p></div>');
-	});
-  }
-});
-
-
-$.ajax({
-    url: 'https://json-data.herokuapp.com/darts/companies',
-    type:"GET",
-    success: function(burrito) {
-
-    var userCompanies = burrito.results;
-
-   
-
-        userCompanies.forEach(function (company){
-        $(".companyRow").append('<div class="col-lg-3 fourCos"><div class="fourCosBox"><img class="companyPics" src="'+company.image_url+'"></div></div>');
-    });
-
-    }
-});
- 
-});
-
-function initMap() {
-    var mapDiv = document.getElementById('map');
-    var map = new google.maps.Map(mapDiv, {
-        center: {lat: 40.7128, lng: -74.0059},
-        zoom: 8
-    });
- } 

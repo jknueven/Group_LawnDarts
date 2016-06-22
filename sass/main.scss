@@ -2,7 +2,22 @@ $primaryColor: #F79459;
 
 $secondaryColor: #C2DC74;
 
-@import "map";
+@import 'map';
+
+iframe{
+	width: 520px;
+	height: 390px;
+	background-color: $primaryColor;
+	border: none;
+	z-index: 1000;
+	position: absolute;
+	margin-left: -500px;
+}
+
+.container-fluid {
+	padding:0;
+	width:100%;
+}
 
 .Top, .Testimonials, .Companies, .Map, .Footer {
 	background-size:cover;
@@ -11,10 +26,12 @@ $secondaryColor: #C2DC74;
 .Top {
 	height:500px;
 	background-color:$primaryColor;
+	margin-right:0;
 }
 
 .Logo {
 	margin-left:440px;
+	margin-right:0;
 	.logoTitle {
 		width:auto;
 		h1{
@@ -31,13 +48,6 @@ $secondaryColor: #C2DC74;
 	}
 }
 
-#placeholderdiv {
-	margin-top:25px;
-	margin-left:50px;
-	img{
-		border-radius:0px 0px 10px 10px;
-	}
-}
 
 .Title {
 	h2 {
@@ -47,10 +57,11 @@ $secondaryColor: #C2DC74;
 
 .topContent {
 	margin-left:60px;
+	margin-right:0;
 }
 
 .shopCart {
-	margin-left:0px;
+	margin-left:50px;
 }
 
 .descripBox {
@@ -96,25 +107,23 @@ $secondaryColor: #C2DC74;
 }
 
 .Testimonials {
-	height:360px;
 	background-color:white;
 }
 
 .testimonials {
-	margin-left:500px;
-    padding-bottom: 20px;
+	text-align:center;
+	margin:65px;
 
 }
 
-.testimonial {
-	margin-left:50px;
-}
-
-.personOne img, .personTwo img, .personThree img {
+.people img {
     height: 100px;
     width: 100px;
     border-radius: 50%;
+    margin:0 auto;
+    display:block;
 }
+
 
 .images {
     width:100%;
@@ -126,8 +135,15 @@ $secondaryColor: #C2DC74;
     text-align: center;
 }
 
+p.customerReview {
+	margin-left:68px;
+	margin-right:68px;
+	margin-bottom:75px;
+
+}
+
 .testText {
-	margin-left:125px;
+	
 	text-align:center;
 }
 .review .customerReview {
@@ -142,14 +158,26 @@ $secondaryColor: #C2DC74;
 }
 
 .Companies {
-	height:300px;
+	
 	background-color:lighten($secondaryColor,10);
 }
 
 .fourCosBox {
-	img{
-		width:150px;
-	}
+	width:250px;
+	height:250px;
+	margin:0 auto;
+	display: block;
+	margin-bottom:65px;
+}
+
+img.companyPics {
+	width:100%;
+
+}
+
+h1.coTitle {
+	text-align:center;
+	margin:65px;
 }
 
 .Map {
