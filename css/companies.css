@@ -1,9 +1,10 @@
 .container {
   width: 100%; }
 
-h3.mapTitle {
+h2.mapTitle {
   text-align: center;
-  margin: 65px; }
+  margin: 65px;
+  font-size: 40px; }
 
 #map {
   width: 100%;
