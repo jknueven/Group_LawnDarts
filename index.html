@@ -1,133 +1,131 @@
 <!DOCTYPE html>
-<head>
-<title>Lawn Darts</title>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="https://use.fontawesome.com/ae699f5e09.js"></script>
-<link type="text/css" rel="stylesheet" href="css/main.css">
-</head>
-<body>
+	<head>
+		<title>Lawn Darts</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="https://use.fontawesome.com/ae699f5e09.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oleo+Script:700,400' rel='stylesheet' type='text/css'>
+		<link type="text/css" rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
 
-<div class="container-fluid col-lg-12 Main">
-
-<div class="row Top">
-
-	<div class="row Logo">
-		<div class="col-lg-6 logoTitle">
-			<h1>Dart Haüs</h1> 
-		</div>
-		
-		<div class="col-lg-6 logoIMG">
-			<img src = "images/dartLogo.png">
-		</div>
-
-	<div class="row topContent">
-		<div class="rotateImg">
-			<iframe src = "imageRotation.html">
-				<p>Your browser does not support iframes</p>
-			</iframe>	
-
-		</div>
-
-		<div class="col-md-12 shopCart"> 
-
-		<div class="row Title">
-   
- 	 </div>
-
-  		<div class="row Descrip">
-   		 <div class="col-lg-6 descripBox">
-     
-
-    		</div>
-
- 		 </div>
-
-  			<div class="row Buttons">
-
-      <div class="col-lg-2 ModalButton">
-
-     		 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#addToCart">Add to Cart</button>
-
-        <div id="addToCart" class="modal fade" role="dialog">
-      
-        	<div class="modal-dialog">
-
-            	<div class="modal-content">
-      
-            		<div class="modal-header">
-                	<button type="button" class="close" data-dismiss="modal">&times;</button>
-                	<h4 class="modal-title">Item added to Cart.</h4>
-             		</div>
-
-            		<div class="modal-body">
-            		<p>Thank you for your purchase!</p>
-            		</div>
-       
-        		</div>
-
-         	</div>
-    
-        </div>
-      </div>
-
-    	<div class="col-lg-6 SocialMedia">
-     	 	<i class="fa fa-facebook-square" aria-hidden="true"></i>
-      		<i class="fa fa-twitter-square" aria-hidden="true"></i>
-      		<i class="fa fa-pinterest-square" aria-hidden="true"></i>
-    	</div>
- 			</div> 
-
-		</div>
-	</div>
-
-	
-
-</div>
-
-<div class="row Testimonials"> 
-
-	<div class="row">
-		<div class="col-md-12 reviewContainer">
-			<h2 class="testimonials">Testimonials</h2>
-				<div class="testimonial">
-					
-				</div>	
-		</div>
-	</div>
-
-</div>
-
-<div class="row Companies"> 
-
-	<div class="col-md-12 coContainer">
-		<h1 class="coTitle">Companies Who Use Our Product</h1>
-			<div class="companyRow row">
-						
+		<div class="container-fluid col-lg-12 Main">
+			<div class ="row Logo">	
+				<div class="col-lg-6 logoTitle">
+					<h1>Dart Ha&#252;s</h1> 
+				</div>		
+				<div class="col-lg-6 logoIMG">
+					<img src = "images/dartLogo.png">
+				</div>		
 			</div>	
-	</div>	
 
-</div>
 
-<div class="row Map"> 
+			<div class="row Top">
+	
+				<div class="topContent">
+					<div class="col-md-6 container">
+						<div class="slider_wrapper">
+							<ul id="image_slider">
+								<li><img src="images/darts.jpg"></li>
+								<li><img src="images/dartsinLawn.jpg"></li>
+								<li><img src="images/oldDartBox.jpg"></li>
+								<li><img src="images/peopleHavingFun.jpg"></li>
+								
+							</ul>					
+							<span class="nvgt" id="prev"></span>
+							<span class="nvgt" id="next"></span>
+						</div>
+					</div>	
+				</div>
 
-	<div class="col-1g-12 mapContainer">
-		<h3 class="mapTitle">Developed in the Best Country</h3>
-  			<div id="map"></div>
-	</div>
+					<div class="col-md-6 shopCart"> 
+						<div class="Title">
+				 	 	</div>
 
-</div>
+				  		<div class="Descrip">
+				   		 	<div class="col-lg-6 descripBox">
+				    		</div>
+				 		</div>
 
-<div class="row Footer"> </div>
+				  		
+							<div class="SocialMedia"> 	
+						     	
+						     		 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#addToCart">Add to Cart</button>
 
-</div>
+							        <div id="addToCart" class="modal fade" role="dialog">
+							        	<div class="modal-dialog">
+							            	<div class="modal-content">
+							      
+							            		<div class="modal-header">
+							                	<button type="button" class="close" data-dismiss="modal">&times;</button>
+							                	<h4 class="modal-title">Item added to Cart.</h4>
+							             		</div>
 
-<script
-  src="https://code.jquery.com/jquery-1.12.4.min.js"
-  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-  crossorigin="anonymous"></script>
-<script src="js/main.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt-jsamV4PszGB2VGUeR9ri1W2I1HLdbw&callback=initMap"></script>
-</body>
+							            		<div class="modal-body">
+							            		<p>Thank you for your purchase!</p>
+							            		</div>
+							        		</div>
+							         	</div>
+							        </div>
+						      	
+
+						    	<i class="fa fa-facebook-square" aria-hidden="true"></i>
+						      		<i class="fa fa-twitter-square" aria-hidden="true"></i>
+						      		<i class="fa fa-pinterest-square" aria-hidden="true"></i>
+						    	</div>
+				 		 
+					</div>
+				</div>
+			</div>
+				
+
+
+
+
+
+			<div class="row Testimonials"> 
+
+				<div class="row">
+					<div class="col-md-12 reviewContainer">
+						<h2 class="testimonials">Testimonials</h2>
+							<div class="testimonial">
+								
+							</div>	
+					</div>
+				</div>
+			</div>
+
+			<div class="row Companies"> 
+
+				<div class="col-md-12 coContainer">
+					<h2 class="coTitle">Companies Who Use Our Product</h2>
+						<div class="companyRow row">
+									
+						</div>	
+				</div>	
+
+			</div>
+
+			<div class="row Map"> 
+
+				<div class="col-1g-12 mapContainer">
+					<h3 class="mapTitle">Developed in the Best Country</h3>
+			  			<div id="map"></div>
+				</div>
+			</div>
+
+			<div class="row Footer"> 
+			</div>
+
+		</div>
+
+		<script
+		  src="https://code.jquery.com/jquery-1.12.4.min.js"
+		  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+		  crossorigin="anonymous"></script>
+		<script src="js/main.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt-jsamV4PszGB2VGUeR9ri1W2I1HLdbw&callback=initMap"></script>
+	</body>
 </html>
